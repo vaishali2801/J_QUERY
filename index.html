@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="checkbox-wrapper-54">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      
+      <style>
+        .checkbox-wrapper-54 input[type="checkbox"] {
+          visibility: hidden;
+          display: none;
+        }
+      
+        .checkbox-wrapper-54 *,
+        .checkbox-wrapper-54 ::after,
+        .checkbox-wrapper-54 ::before {
+          box-sizing: border-box;
+        }
+      
+        /* The switch - the box around the slider */
+        .checkbox-wrapper-54 .switch {
+
+          --width-of-switch: 3.5em;
+          --height-of-switch: 2em;
+          /* size of sliding icon -- sun and moon */
+          --size-of-icon: 1.4em;
+          /* it is like a inline-padding of switch */
+          --slider-offset: 0.3em;
+          position: relative;
+          width: var(--width-of-switch);
+          height: var(--height-of-switch);
+          display: inline-block;
+        }
+      
+        /* The slider */
+        .checkbox-wrapper-54 .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #f4f4f5;
+          transition: .4s;
+          border-radius: 30px;
+        }
+      
+        .checkbox-wrapper-54 .slider:before {
+          position: absolute;
+          content: "";
+          height: var(--size-of-icon,1.4em);
+          width: var(--size-of-icon,1.4em);
+          border-radius: 20px;
+          left: var(--slider-offset,0.3em);
+          top: 50%;
+          transform: translateY(-50%);
+          background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+          ;
+         transition: .4s;
+        }
+      
+        .checkbox-wrapper-54 input:checked + .slider {
+          background-color: #303136;
+        }
+      
+        .checkbox-wrapper-54 input:checked + .slider:before {
+          left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+          background: #303136;
+          /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+          box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+        }
+      </style>
+      
+    <div class="container p-1">
+        <div class="box box1">Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Voluptatem at dolor minima. Perspiciatis 
+            voluptatum inventore doloremque quisquam, cum, libero nobis quia 
+            temporibus voluptas quasi molestiae.</div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus ad fugit excepturi? Expedita unde culpa exercitationem odit
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox-wrapper-5">
+          <div class="check">
+            <input id="check-5" type="checkbox">
+            <label for="check-5"></label>
+          </div>
+        </div> 
+      </div>
+    <hr/>
+    <button class="button-85" role="button">Button 85</button>
+    <br/>
+    <button class="button-89" role="button">Button 89</button>
+
+<hr/>
+
+<div class="checkbox-wrapper-31">
+    <input type="checkbox"/>
+    <svg viewBox="0 0 35.6 35.6">
+      <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+      <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+      <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+    </svg>
+  </div>
+  
+  <style>
+    .checkbox-wrapper-31:hover .check {
+      stroke-dashoffset: 0;
+    }
+  
+    .checkbox-wrapper-31 {
+        margin-left: 50%;
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+    }
+    .checkbox-wrapper-31 .background {
+      fill: #ccc;
+      transition: ease all 0.6s;
+      -webkit-transition: ease all 0.6s;
+    }
+    .checkbox-wrapper-31 .stroke {
+      fill: none;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      stroke-dashoffset: 100;
+      stroke-dasharray: 100;
+      transition: ease all 0.6s;
+      -webkit-transition: ease all 0.6s;
+    }
+    .checkbox-wrapper-31 .check {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+      stroke-dashoffset: 22;
+      stroke-dasharray: 22;
+      transition: ease all 0.6s;
+      -webkit-transition: ease all 0.6s;
+    }
+    .checkbox-wrapper-31 input[type=checkbox] {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      margin: 0;
+      opacity: 0;
+    }
+    .checkbox-wrapper-31 input[type=checkbox]:hover {
+      cursor: pointer;
+    }
+    .checkbox-wrapper-31 input[type=checkbox]:checked + svg .background {
+      fill: #6cbe45;
+    }
+    .checkbox-wrapper-31 input[type=checkbox]:checked + svg .stroke {
+      stroke-dashoffset: 0;
+    }
+    .checkbox-wrapper-31 input[type=checkbox]:checked + svg .check {
+      stroke-dashoffset: 0;
+    }
+  </style>
+ 
+  
+  <hr/>
+  
+
+</body>
+
+<script>
+
+$("#check-5").change(function(){
+  $("body").toggleClass("dark")
+})
+$(".switch").hover(function(){
+    $(".box").toggle()
+})
+    
+</script>
+</html>
