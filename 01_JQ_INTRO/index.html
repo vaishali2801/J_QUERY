@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro jquery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+<button class="show">show box</button>
+<button class="hide">hide box</button>
+<button class="toggle">toggle</button>
+<div class="box">
+    
+</div>
+
+<button style="position: fixed;right: 10%;top: 10%;" class="theme">🌞 day</button>
+<hr/>
+<input type="email" placeholder="enter your email">
+<div class="box1">
+    <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque suscipit
+        beatae numquam voluptatem, autem, delectus laudantium pariatur, voluptate
+         consequatur eveniet aspernatur at nemo voluptas porro!
+       </p>
+   
+</div>
+
+</body>
+
+
+ <script>
+$(".theme").click(function(){
+    $("body").toggleClass("dark")
+    $(".theme").text("🌚 night")
+})
+
+$(".show").click(function(){
+    $(".box").show(2000)
+    })
+
+  $(".hide").mouseup(function(){
+    $(".box").hide(2000)
+  }) 
+
+  $(".toggle").click(function(){
+    $(".box").toggle(2000)
+  })
+    $("input").click(function(){
+    $("p").toggle(1000)
+    $(".box1").toggle(1000)
+  })
+  
+//   $(".show").click(function(){
+//     $(".box").show(fast)
+//     })
+//   $(".show").click(function(){
+//     $(".box").show(slower)
+//     })
+//   $(".show").click(function(){
+//     $(".box").show(faster)
+//     })
+//   $(".show").click(function(){
+//     $(".box").show(slow)
+//     })
+ 
+</script>
+
+
+</html>

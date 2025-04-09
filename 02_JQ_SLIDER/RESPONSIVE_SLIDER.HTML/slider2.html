@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider2</title>
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<style>
+        .container{
+            max-width: 1320px;
+            margin: auto;
+           
+        }
+        .box{
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .box img{
+            width: 100%;
+        }
+        .slick-prev:before, .slick-next:before{
+            color:black  !important
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="slick-slider">
+            <div class="box">
+                <img src="https://plus.unsplash.com/premium_photo-1661936414165-3039a8d906f9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2VvdWx8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2022/10/15/16/44/night-view-7523474_640.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="https://t4.ftcdn.net/jpg/02/35/31/57/360_F_235315723_t7XxsPmrQcrga6ffEIT7XoaHUa96fqFO.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/464629385/photo/seoul-skyline.jpg?s=612x612&w=0&k=20&c=Wo9LYxk6L9z0VORPkMxjubMcAZfWAJtRJWVfiJR8jmw=" alt="">
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/621371796/photo/sunset-at-seoul-city-skyline-south-korea.jpg?s=612x612&w=0&k=20&c=eDxGXs72CRSKaNKXjSGBFpnxkc00WGp441_8OLbe8Gg=" alt="">
+            </div>
+            <div class="box">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/160621115931-seoul-after.jpg?q=x_4,y_219,h_2370,w_4213,c_crop/h_833,w_1480" alt="">
+            </div>
+            <div class="box">
+                <img src="https://cdn.concreteplayground.com/content/uploads/2023/12/City-of-Seoul_CJNattanai_Getty-Images-1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="https://images.prismic.io/bounce/59219ca7-7e9d-4dad-94ae-d47d575dfd9a_zequn-gui-xVFS3meofYM-unsplash.jpg?auto=format%2Ccompress&ar=1.7%3A1&fit=crop" alt="">
+            </div>
+            <div class="box">
+                <img src="https://plus.unsplash.com/premium_photo-1661886333708-877148b43ae1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VvdWx8ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1472387040940-3ae0cdbf127d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VvdWwlMjBjaXR5fGVufDB8fDB8fHww" alt="">
+            </div>
+        </div>
+    </div>  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    
+    $('.slick-slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 700,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+	
+    
+</script>
+</html>
